@@ -152,7 +152,6 @@ public class ClientToProxyConnection extends ProxyConnection<HttpRequest> {
         super(AWAITING_INITIAL, proxyServer, false);
 
         initChannelPipeline(pipeline);
-        LOG.info("sslEngineSource={}",sslEngineSource);
 
         if (sslEngineSource != null) {
             LOG.debug("Enabling encryption of traffic from client to proxy");
